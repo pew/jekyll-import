@@ -56,6 +56,7 @@ module JekyllImport
         header = {
           "layout" => "post",
           "title"  => item.title,
+          "canonical_url" => item.link
         }
 
         header["tag"] = options["tag"] unless options["tag"].nil? || options["tag"].empty?
